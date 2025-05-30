@@ -25,7 +25,6 @@ const socialLinks = [
     label: "GitHub",
     icon: (
       <svg
-        xmlns="https://github.com/Dimeji12"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -40,13 +39,12 @@ const socialLinks = [
         <path d="M9 18c-4.51 2-5-2-7-2" />
       </svg>
     ),
-    href: "#",
+    href: "https://github.com/Dimeji12",
   },
   {
     label: "LinkedIn",
     icon: (
       <svg
-        xmlns="https://www.linkedin.com/in/oladimeji-oladiti-017426252"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -62,13 +60,12 @@ const socialLinks = [
         <circle cx="4" cy="4" r="2" />
       </svg>
     ),
-    href: "#",
+    href: "https://www.linkedin.com/in/oladimeji-oladiti-017426252",
   },
   {
     label: "Twitter",
     icon: (
       <svg
-        xmlns="https://www.linkedin.com/in/oladimeji-oladiti-017426252"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -82,13 +79,12 @@ const socialLinks = [
         <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
       </svg>
     ),
-    href: "#",
+    href: "https://www.linkedin.com/in/oladimeji-oladiti-017426252"
   },
   {
     label: "Instagram",
     icon: (
       <svg
-        xmlns="https://www.linkedin.com/in/oladimeji-oladiti-017426252"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -104,11 +100,12 @@ const socialLinks = [
         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
       </svg>
     ),
-    href: "#",
+    href: "https://www.linkedin.com/in/oladimeji-oladiti-017426252"
   },
 ];
 
-const ContactInfo = () => {
+const ContactInfo = () =>
+{
   return (
     <motion.div
       initial={{ opacity: 0, x: -50 }}
@@ -143,6 +140,8 @@ const ContactInfo = () => {
             <a
               key={index}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label={link.label}
             >

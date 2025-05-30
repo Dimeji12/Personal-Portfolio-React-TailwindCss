@@ -102,12 +102,14 @@ const Hero = () =>
           >
             <a
               href="https://github.com/Dimeji12"
+              target="_blank"
               className="text-foreground/70 hover:text-foreground transition-colors"
               aria-label="GitHub"
             >
               <Github size={24} />
             </a>
             <a
+              target="_blank"
               href="https://www.linkedin.com/in/oladimeji-oladiti-017426252"
               className="text-foreground/70 hover:text-foreground transition-colors"
               aria-label="LinkedIn"
@@ -115,6 +117,7 @@ const Hero = () =>
               <Linkedin size={24} />
             </a>
             <a
+              target="_blank"
               href="https://twitter.com/"
               className="text-foreground/70 hover:text-foreground transition-colors"
               aria-label="Twitter"

@@ -1,6 +1,7 @@
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import Header from "@/components/Header";
+import Certifications from "./components/Certification";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Certifications/>
         <Contact />
       </main>
       <Footer />

@@ -5,15 +5,19 @@ import { Button } from "@/components/ui/button";
 
 import worldGazetteerImg from "@/assets/worldGazetteerImg.png";
 import taskManagerImg from "@/assets/taskManagerImg.png";
-// import fitnessTrackerImg from "@/assets/fitness-tracker.png";
-// import portfolioImg from "@/assets/portfolio.png";
+import ShopEase from "@/assets/ShopEase.png";
+import LearnSphere from "@/assets/LearnSphere.png";
+import Youtube from "@/assets/Youtube.png";
+import GymSystem from "@/assets/GymSystem.png"
+
+
 
 const projects = [
   {
     title: "World Gazetteer",
     description:
-      "An interactive global directory web application that allows users to search and explore countries, cities, and population data using RESTful APIs. Built with a clean UI, it integrates external data sources to provide dynamic content updates.",
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "REST API"],
+      "An interactive global directory web application that allows users to search and explore countries, cities, and population data using RESTful APIs. Built with a clean UI and responsive design, it integrates external data sources to provide real-time content updates.",
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "REST API", "Axios", "Bootstrap"],
     imageUrl: worldGazetteerImg,
     imageDescription:
       "Interactive directory interface showing country and population data with search filters",
@@ -21,14 +25,93 @@ const projects = [
     codeLink: "https://github.com/Dimeji12/world-gazetteer",
   },
   {
-    title: "Task Management App",
+    title: "Ecommerce App - ShopEase",
     description:
-      "A collaborative task management application with real-time updates, task assignment, and progress tracking.",
-    tags: ["Vue.js", "Firebase", "Tailwind CSS", "JavaScript"],
+      "A full-stack ecommerce application with user authentication (JWT), product browsing, and a clean, modern UI. Backend is powered by .NET Core and Entity Framework, while the frontend is built with React and Tailwind CSS.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Tailwind CSS",
+      "C#",
+      ".NET",
+      "ASP.NET Core",
+      "Entity Framework",
+      "JWT",
+      "Axios",
+      "SQLite"
+    ],
+    imageUrl: ShopEase,
+    imageDescription: "Modern ecommerce UI with product cards and navigation",
+    demoLink: "https://shopease-snowy.vercel.app/",
+    codeLink: "https://github.com/Dimeji12/Shopease--Frontend-React",
+  },
+  {
+    title: "E-learning System - LearnSphere",
+    description:
+      "A responsive e-learning platform where users can view, enroll in, and access courses. Includes secure login, JWT authentication, and dynamic course content. Built using .NET backend with a React frontend.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Tailwind CSS",
+      "C#",
+      ".NET",
+      "ASP.NET Core",
+      "Entity Framework",
+      "JWT",
+      "Axios",
+      "SQL Server"
+    ],
+    imageUrl: LearnSphere,
+    imageDescription: "Course dashboard with interactive cards and filters",
+    demoLink: "https://learnsphere-react.vercel.app/courses",
+    codeLink: "https://github.com/Dimeji12/Learnsphere--React",
+  },
+  {
+    title: "Task Management App - Laravel",
+    description:
+      "A collaborative task management application with a kanban-style interface, task assignment, and progress tracking. Built using Laravel and Blade, styled with Bootstrap and Flowbite components.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Flowbite",
+      "Bootstrap",
+      "PHP",
+      "Laravel",
+      "Blade",
+      "MySQL"
+    ],
     imageUrl: taskManagerImg,
     imageDescription: "Task management application with kanban board interface",
-    codeLink: "#",
+    demoLink: "https://github.com/Dimeji12/task-manager-Laravel",
+    codeLink: "https://github.com/Dimeji12/task-manager-Laravel",
+  },
+  {
+    title: "Full-Stack Video Platform (YouTube-style App)",
+    description:
+      "A responsive YouTube-style App built with React and Tailwind, featuring video search, playback, and dynamic routing. Uses dummy API data to simulate YouTube’s core functionalities.",
+    tags: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS", "Vite", "Axios"],
+    imageUrl: Youtube,
+    imageDescription: "YouTube-like video interface with sidebar and search results",
+    demoLink: "https://youtube-clone-brown-one.vercel.app/",
+    codeLink: "https://github.com/Dimeji12/Youtube-Clone",
+  },
+  {
+    title: "Gym Management System - Console Application",
+    description:
+      "A C# console-based application designed to manage gym memberships, staff, and class schedules efficiently. Developed using object-oriented programming and SOLID principles, it supports CRUD operations for members and staff, and ensures data consistency through a structured, modular design.",
+    tags: ["C#", "Visual Studio", "Object Oriented Programming", "SOLID Principles"],
+    imageUrl: GymSystem,
+    imageDescription:
+      "Console interface displaying menu options for managing gym members, staff, and schedules.",
+    demoLink: "https://drive.google.com/file/d/1hY3CEydGbkyv92BV60_G6_lWcW2PZbZM/view",
+    codeLink: "https://github.com/Dimeji12/Gym-Management-System-ConsoleApp"
   }
+
 
 ];
 
@@ -51,7 +134,8 @@ const itemVariants = {
   },
 };
 
-const Projects = () => {
+const Projects = () =>
+{
   return (
     <section id="projects" className="section bg-secondary/30">
       <div className="container-custom">

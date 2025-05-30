@@ -45,20 +45,18 @@ const About = () =>
             viewport={{ once: true, margin: "-100px" }}
           >
             <h3 className="text-2xl font-bold mb-4">
-              Creative Developer & Designer
+              Creative Software Engineer & Designer
             </h3>
             <p className="text-muted-foreground mb-6">
-              I'm a passionate developer with experience creating
-              beautiful, functional websites and applications. My journey in web
-              development started with a curiosity about how things work on the
-              internet, and it has evolved into a career I truly love.
+              Software developer with a Master’s degree in Software Engineering and practical experience delivering functional, visually engaging websites and applications.
+              What began as a curiosity about how the internet works has evolved into a results-driven career focused on building clean, efficient, and reliable solutions.
             </p>
             <p className="text-muted-foreground mb-6">
-              I specialize in building responsive, user-friendly interfaces that
-              not only look great but also provide exceptional user experiences.
-              My approach combines technical expertise with creative
-              problem-solving to deliver solutions that exceed expectations.
+              I specialize in creating responsive, user-focused interfaces that enhance usability and performance.
+              With a strong foundation in modern development practices and a collaborative mindset, I aim to deliver scalable, maintainable solutions that solve real-world business challenges and exceed client expectations.
             </p>
+
+
 
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div>
@@ -84,7 +82,7 @@ const About = () =>
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <a
-                href="#"
+                href="/Oladimeji_Oladiti_Resume.pdf"
                 className="inline-block gradient-bg text-white font-medium px-6 py-3 rounded-lg"
                 download
               >

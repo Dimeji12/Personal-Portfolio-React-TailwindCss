@@ -52,7 +52,7 @@ const Footer = () =>
             className="flex gap-6 mb-8"
           >
             <a
-              href="#"
+              href="https://github.com/Dimeji12"
               className="p-2 rounded-full bg-secondary text-foreground/70 hover:text-foreground transition-colors"
               aria-label="GitHub"
             >
@@ -72,7 +72,7 @@ const Footer = () =>
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/oladimeji-oladiti-017426252"
               className="p-2 rounded-full bg-secondary text-foreground/70 hover:text-foreground transition-colors"
               aria-label="LinkedIn"
             >
@@ -93,7 +93,7 @@ const Footer = () =>
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/oladimeji-oladiti-017426252"
               className="p-2 rounded-full bg-secondary text-foreground/70 hover:text-foreground transition-colors"
               aria-label="Twitter"
             >
@@ -112,7 +112,7 @@ const Footer = () =>
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/oladimeji-oladiti-017426252"
               className="p-2 rounded-full bg-secondary text-foreground/70 hover:text-foreground transition-colors"
               aria-label="Instagram"
             >
