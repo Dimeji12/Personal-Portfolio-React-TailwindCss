@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,6 +37,7 @@ const Header = () => {
       }`}
     >
       <div className="container-custom flex items-center justify-between h-20">
+        {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -47,12 +49,12 @@ const Header = () => {
           </a>
         </motion.div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation Links */}
         <motion.nav
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="hidden md:flex items-center space-x-1"
+          className="hidden md:flex items-center space-x-4"
         >
           <button onClick={() => scrollToSection("home")} className="nav-link active">
             Home
@@ -66,17 +68,22 @@ const Header = () => {
           <button onClick={() => scrollToSection("projects")} className="nav-link">
             Projects
           </button>
+          <button onClick={() => scrollToSection("certifications")} className="nav-link">
+            Certifications
+          </button>
           <button onClick={() => scrollToSection("contact")} className="nav-link">
             Contact
           </button>
         </motion.nav>
 
+        {/* Dark Mode Toggle + CTA */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="hidden md:block"
+          className="hidden md:flex items-center space-x-3"
         >
+          <DarkModeToggle />
           <Button
             onClick={() => scrollToSection("contact")}
             className="gradient-bg"
@@ -93,11 +100,7 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
       </div>
@@ -112,36 +115,13 @@ const Header = () => {
           className="md:hidden bg-background/95 backdrop-blur-md"
         >
           <div className="container-custom py-4 flex flex-col space-y-4">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-left py-2 px-4 hover:bg-secondary rounded-md"
-            >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-left py-2 px-4 hover:bg-secondary rounded-md"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("skills")}
-              className="text-left py-2 px-4 hover:bg-secondary rounded-md"
-            >
-              Skills
-            </button>
-            <button
-              onClick={() => scrollToSection("projects")}
-              className="text-left py-2 px-4 hover:bg-secondary rounded-md"
-            >
-              Projects
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-left py-2 px-4 hover:bg-secondary rounded-md"
-            >
-              Contact
-            </button>
+            <button onClick={() => scrollToSection("home")} className="text-left py-2 px-4 hover:bg-secondary rounded-md">Home</button>
+            <button onClick={() => scrollToSection("about")} className="text-left py-2 px-4 hover:bg-secondary rounded-md">About</button>
+            <button onClick={() => scrollToSection("skills")} className="text-left py-2 px-4 hover:bg-secondary rounded-md">Skills</button>
+            <button onClick={() => scrollToSection("projects")} className="text-left py-2 px-4 hover:bg-secondary rounded-md">Projects</button>
+            <button onClick={() => scrollToSection("certifications")} className="text-left py-2 px-4 hover:bg-secondary rounded-md">Certifications</button>
+            <button onClick={() => scrollToSection("contact")} className="text-left py-2 px-4 hover:bg-secondary rounded-md">Contact</button>
+            <DarkModeToggle />
             <Button
               onClick={() => scrollToSection("contact")}
               className="gradient-bg w-full"

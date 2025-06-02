@@ -67,7 +67,7 @@ const projects = [
     ],
     imageUrl: LearnSphere,
     imageDescription: "Course dashboard with interactive cards and filters",
-    demoLink: "https://learnsphere-react.vercel.app/courses",
+    demoLink: "https://learnsphere-react.vercel.app/",
     codeLink: "https://github.com/Dimeji12/Learnsphere--React",
   },
   {
